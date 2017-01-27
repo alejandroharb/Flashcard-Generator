@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>iFlash Cards</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/materialize.min.css">
+    <!-- MAIN.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+	<nav>
+	    <div class="nav-wrapper">
+	      <a href="#" class="brand-logo center"><span style="color:#8bc34a">i</span>Cards</a>
+	    </div>
+ 	</nav>
+	<div class="container">
+		<div class="row">
+		    <form class="col s12">
+		      <div class="row">
+		        <div class="input-field col s12">
+		       		<i class="material-icons prefix">mode_edit</i>
+		         	<textarea id="questionInput" class="materialize-textarea"></textarea>
+		        	<label for="questionInput">Enter Basic Card Question</label>
+		        </div>
+		      </div>
+		      <div class="row">
+		      	<div class="input-field col s8">
+		      		<i class="material-icons prefix">spellcheck</i>
+		      		<textarea id="answerInput" class="materialize-textarea"></textarea>
+		        	<label for="answerInput">Enter Answer</label>
+		      	</div>
+		      	<div class="input-field col s4">
+		      		<button id="basicFlashcardSubmit" class="btn waves-effect waves-light" type="submit" name="action">Submit<i class="material-icons right">send</i></button>
+		      	</div>
+		      </div>
+		    </form>
+		 </div>
+	</div>
+
+  <!-- JQuery -->
+  <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="assets/javascript/materialize.min.js"></script>
+  <!-- front-end javascript file -->
+  <script src="assets/javascript/control.js"></script>
+  <script src="assets/javascript/app.js"></script>
+</body>
+</html>

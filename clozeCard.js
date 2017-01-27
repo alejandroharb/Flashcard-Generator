@@ -14,6 +14,22 @@ var ClozeCard = function(question, omitted) {
 ClozeCard.prototype.display_answer = function() {
 	return this.answer;s
 }
-var example = new ClozeCard("The president of Bolivia is Evo Morales", "Morales");
 
-console.log(example.display_answer());
+//CLOZE CARD Storing in mysql
+ClozeCard.prototype.store_data = function(question, ommitted) {
+	//storing into clozeCard table of database
+	connection.query("INSERT INTO clozeCards SET ?",[{
+		question: question
+	},{
+		answer: answer
+	}], function(err,res) {
+			if (err) throw err;
+			connection.end();
+		});
+}
+
+// var example = new ClozeCard("The president of Bolivia is Evo Morales", "Morales");
+
+// console.log(example.display_answer());
+
+module.exports = ClozeCard;
